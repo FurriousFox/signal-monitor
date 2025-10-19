@@ -5,5 +5,4 @@ cd /app/frontend
 npm i
 npm run dev &
 cd /app/monitor
-deno -A index.ts &
-sh
+deno -A index.ts

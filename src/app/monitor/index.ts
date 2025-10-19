@@ -20,7 +20,7 @@ setInterval(async () => {
             if (Math.floor((await fetch(monitor.url, { method: monitor.method ?? "GET" })).status / 100) !== 2) {
                 throw new Error("non 200 response");
             } else {
-                console.log(`all went well for ${monitor.url}`);
+                console.log(`success ${monitor.url}`);
 
                 const database2 = JSON.parse(fs.readFileSync("../database.json", 'utf-8'));
                 if (!database2.monitors) database2.monitors = [];

@@ -8,9 +8,14 @@ damn it, lost signal i think...
 
 ah, all good :\)
 
+## what's this?
+
+It's monitor checking whether services are up, nothing spectacular, but hopefully it'll be soon.
+
 ## running it
 
-you can try it at [signal-demo.argv.nl/](https://signal-demo.argv.nl/)
+you can try it at [signal-demo.argv.nl](https://signal-demo.argv.nl/)
+or watch the demo at <https://youtu.be/KSAcIBlxux8>
 
 ### recommended way (linux)
 
@@ -20,9 +25,9 @@ micha@mini:~$ docker volume create signal_monitor_data
 micha@mini:~$ docker run -e PORT=8080 -dit --restart=always --network=host --name signal_monitor -v signal_monitor_data:/data signal_monitor
 ``` -->
 ```ShellSession
-micha@mini:~$ docker pull signal_monitor
-micha@mini:~$ docker volume create signal_monitor_data
-micha@mini:~$ docker run -e PORT=8080 -dit --restart=always --network=host --name signal_monitor -v signal_monitor_data:/data signal_monitor
+micha@mini:~$ git clone https://github.com/FurriousFox/signal-monitor.git
+micha@mini:~$ cd signal-monitor
+micha@mini:~$ ./run.sh
 ```
 
 <!-- ### windows
@@ -46,6 +51,7 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 - shadcn/ui
 - Tailwind
 - lucide-react
+- react-hook-form + zod
 
 ### and potentional future expansion of the stack?
 
@@ -53,7 +59,6 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 - TanStack Query (React Query)
 - tRPC
 - Chart.js (react-chartjs-2) / Recharts
-- react-hook-form + zod
 - sonner
 
 - Prisma
