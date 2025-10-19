@@ -10,7 +10,7 @@ ah, all good :\)
 
 ## running it
 
-you can also try it [signal.argv.nl/demo](https://signal.argv.nl/demo)
+you can try it at [signal.argv.nl/demo](https://signal.argv.nl/demo)
 
 ### recommended way (linux)
 
