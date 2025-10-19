@@ -44,7 +44,7 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 - Tailwind
 
 - Zustand
-- TanStack Query
+- TanStack Query (React Query)
 - tRPC
 - Chart.js (react-chartjs-2) / Recharts
 - react-hook-form + zod
@@ -69,3 +69,4 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 - auto https
 - certificate monitoring
 - verbosely detect certificate chain issues (example: skills.ewi.tudelft.nl)
+- determine general state (e.g. some good tests similar to those on ssllabs and internet.nl)
