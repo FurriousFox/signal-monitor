@@ -31,10 +31,36 @@ C:\Users\micha> docker volume create signal_monitor_data
 C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --name signal_monitor -v signal_monitor_data:/data signal_monitor
 ```
 
+## made using
+
+- Nginx
+- Deno
+
+### and potentional future expansion of the stack?
+
+- Next.js (App Router)
+- React
+- shadcn/ui
+- Tailwind
+
+- Zustand
+- TanStack Query
+- tRPC
+- Chart.js (react-chartjs-2) / Recharts
+- react-hook-form + zod
+- sonner (toasts)
+
+- Prisma
+- PostgreSQL
+
+- NextAuth.js
+
 ## future goals
 
-- notifications (discord, telegram, signal, ntfy, email)
-- good looking ui
+- good looking public-facing ui (instead of just notifications)
+- more notification channels (telegram, signal, ntfy, email)
+- use a proper database format that can be synced across servers
+- graphs
 - (multi-node) high availability
 - more protocols
 - kubernetes
@@ -42,3 +68,4 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 - proper ipv6 support (instead of --network=host)
 - auto https
 - certificate monitoring
+- verbosely detect certificate chain issues (example: skills.ewi.tudelft.nl)
