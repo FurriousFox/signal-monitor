@@ -10,17 +10,22 @@ ah, all good :\)
 
 ## running it
 
-you can try it at [signal.argv.nl/demo](https://signal.argv.nl/demo)
+you can try it at [signal-demo.argv.nl/](https://signal-demo.argv.nl/)
 
 ### recommended way (linux)
 
+<!-- ```ShellSession
+micha@mini:~$ docker pull signal_monitor
+micha@mini:~$ docker volume create signal_monitor_data
+micha@mini:~$ docker run -e PORT=8080 -dit --restart=always --network=host --name signal_monitor -v signal_monitor_data:/data signal_monitor
+``` -->
 ```ShellSession
 micha@mini:~$ docker pull signal_monitor
 micha@mini:~$ docker volume create signal_monitor_data
 micha@mini:~$ docker run -e PORT=8080 -dit --restart=always --network=host --name signal_monitor -v signal_monitor_data:/data signal_monitor
 ```
 
-### windows
+<!-- ### windows
 
 Both `--network=host` and IPv6 are barely supported on Docker for Windows, this means there's no IPv6 support for Windows.  
 Make sure to **not** use --network=host (as this causes issues with exposing ports)
@@ -29,26 +34,27 @@ Make sure to **not** use --network=host (as this causes issues with exposing por
 C:\Users\micha> docker pull signal_monitor
 C:\Users\micha> docker volume create signal_monitor_data
 C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --name signal_monitor -v signal_monitor_data:/data signal_monitor
-```
+``` -->
 
 ## made using
 
 - Nginx
 - Deno
 
-### and potentional future expansion of the stack?
-
 - Next.js (App Router)
 - React
 - shadcn/ui
 - Tailwind
+- lucide-react
+
+### and potentional future expansion of the stack?
 
 - Zustand
 - TanStack Query (React Query)
 - tRPC
 - Chart.js (react-chartjs-2) / Recharts
 - react-hook-form + zod
-- sonner (toasts)
+- sonner
 
 - Prisma
 - PostgreSQL
@@ -57,7 +63,7 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 
 ## future goals
 
-- good looking public-facing ui (instead of just notifications)
+- good looking public-facing ui
 - more notification channels (telegram, signal, ntfy, email)
 - use a proper database format that can be synced across servers
 - graphs
