@@ -61,7 +61,7 @@ C:\Users\micha> docker run -e PORT=8080 -dit --restart=always -p 8080:8080 --nam
 - Chart.js (react-chartjs-2) / Recharts
 - sonner
 
-- Prisma
+- drizzle-orm
 - PostgreSQL
 
 - NextAuth.js
